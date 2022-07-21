@@ -35,6 +35,7 @@
                         <th>英文</th>
                         <th>數學</th>
                         <th><i class="fa-solid fa-calculator"></i>&nbsp;總分</th>
+                        <th>移除</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -44,12 +45,13 @@
                         <td><input type="number" name="" id="" value="" class="num" placeholder="請輸入成績"></td>
                         <td><input type="number" name="" id="" value="" class="num" placeholder="請輸入成績"></td>
                         <td><p class="sum" style="color:tomato;font-weight:700;"></p></td>
+                        <td><button id="removeBtn" type="button" class="btn btn-outline-danger"><i class="fa-solid fa-trash-can"></i></button></td>
                         <!-- <td><input type="number" name="" id="" value="" readonly class="border border-white"></td> -->
                     </tr>
                     <tr>
                         <td colspan="4"><button type="submit" class="btn btn-outline-dark"><i
                                     class="fa-solid fa-paper-plane"></i>&nbsp;submit</button></td>
-                        <td><button type="button" class="btn btn-outline-success" id="cloneBtn"><i
+                        <td colspan="2"><button type="button" class="btn btn-outline-success" id="cloneBtn"><i
                                     class="fa-solid fa-plus"></i>&nbsp;Add</button></td>
                     </tr>
                 </tbody>
@@ -100,10 +102,25 @@
                 let cloneData=trLast.clone(true);//複製tr
                 trLast.after(cloneData);
 
-                let trLastNew=$('.myTr').last();//清空複製過來的tr內容
+                let trLastNew=$('.myTr').last(); //清空複製過來的tr內容
                 trLastNew.find('input').val(''); //清空複製過來input的內容
                 trLastNew.find('.sum').text(''); //清空複製過來'總分'的內容
 
+            });
+
+            // 刪除表格----------------------------------------------------------------------------
+            $("#removeBtn").click(function(){
+                
+                let colseTr=$(this).closest('tr'); 
+                let myIndex=$(this).closest('tr').index();
+                console.log(myIndex);
+
+                //tr至少保留一欄
+                if(myIndex>0){ 
+
+                    colseTr.remove();
+
+                }
             });
 
             // 結束-------------------------------------------------------------------------------- 
