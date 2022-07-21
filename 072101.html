@@ -38,12 +38,12 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr class="myTr">
                         <td><input type="text" name="" id="" placeholder="請輸入姓名"></td>
                         <td><input type="number" name="" id="" value="" class="num" placeholder="請輸入成績"></td>
                         <td><input type="number" name="" id="" value="" class="num" placeholder="請輸入成績"></td>
                         <td><input type="number" name="" id="" value="" class="num" placeholder="請輸入成績"></td>
-                        <td><p class="sum"></p></td>
+                        <td><p class="sum" style="color:tomato;font-weight:700;"></p></td>
                         <!-- <td><input type="number" name="" id="" value="" readonly class="border border-white"></td> -->
                     </tr>
                     <tr>
@@ -72,6 +72,8 @@
      <!-- script -->
     <script>
         $(document).ready(function () {
+
+            // 數字加總----------------------------------------------------------------------------
             $(".num").blur(function () {
                 console.log($(this).val());
 
@@ -84,9 +86,27 @@
                     console.log('total',total);
                 });
 
-                colseTr.find('.sum').text(total);
+                colseTr.find('.sum').text(total);//把總分內容顯示在p標籤裡面
 
             });
+
+            // 複製表格----------------------------------------------------------------------------
+            $("#cloneBtn").blur(function(){
+                console.log('cloneBtn ok');
+
+                let trLast=$('.myTr').last();//抓指定的tr
+                console.log(trLast);
+
+                let cloneData=trLast.clone(true);//複製tr
+                trLast.after(cloneData);
+
+                let trLastNew=$('.myTr').last();//清空複製過來的tr內容
+                trLastNew.find('input').val(''); //清空複製過來input的內容
+                trLastNew.find('.sum').text(''); //清空複製過來'總分'的內容
+
+            });
+
+            // 結束-------------------------------------------------------------------------------- 
         });
     </script>
 </body>
