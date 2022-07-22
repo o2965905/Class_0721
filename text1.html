@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .content {
+            width: 1200px;
+            margin: 0 auto;
+
+            /* move層的上一層要設定相對位置 move才不會抓到body */
+            position: relative;
+        }
+
+        .move {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+
+            /* 設定絕對位置 */
+            position: absolute;
+
+            /* 從最右邊開始 */
+            right: 0;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="content">
+
+        <!-- 我要移動的div -->
+        <div class="move">123123</div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer">
+    </script>
+</body>
+
+<script>
+    // 當文件準備好的時候
+    $(document).ready(function () {
+
+        // 將div加入animate動畫 往右邊走250px 秒數5秒
+        $("div").animate( {right: '250px'} , 5000 );
+    })
+</script>
+
+</html>
