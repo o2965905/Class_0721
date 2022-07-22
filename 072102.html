@@ -9,8 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- style -->
     <style>
-        .card:hover{
+        .card:hover {
             transform: scale(1.2);
             box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
         }
@@ -35,7 +37,8 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#aboutme"><i class="fa-solid fa-user"></i>&nbsp;about me<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#aboutme"><i class="fa-solid fa-user"></i>&nbsp;about me<span
+                            class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#skill"><i class="fa-solid fa-map-location-dot"></i>&nbsp;skill</a>
@@ -51,7 +54,7 @@
     </nav>
 
     <!-- Carousel -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-interval="3000" data-ride="carousel">
+    <!-- <div id="carouselExampleCaptions" class="carousel slide" data-interval="3000" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -59,7 +62,7 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://picsum.photos/id/1037/1920/600" class="d-block w-100 min-vh-100" >
+                <img src="https://picsum.photos/id/1037/1920/600" class="d-block w-100 min-vh-100">
                 <div class="carousel-caption d-none d-md-block">
                     <h1>Hi 👋, I'm Riley</h1>
                     <hr>
@@ -67,7 +70,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="https://picsum.photos/id/1005/1920/600" class="d-block w-100 min-vh-100" >
+                <img src="https://picsum.photos/id/1005/1920/600" class="d-block w-100 min-vh-100">
                 <div class="carousel-caption d-none d-md-block">
                     <h1>Hi 👋, I'm Riley</h1>
                     <hr>
@@ -75,7 +78,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="https://picsum.photos/id/1014/1920/600" class="d-block w-100 min-vh-100" >
+                <img src="https://picsum.photos/id/1014/1920/600" class="d-block w-100 min-vh-100">
                 <div class="carousel-caption d-none d-md-block">
                     <h1>Hi 👋, I'm Riley</h1>
                     <hr>
@@ -91,12 +94,14 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </button>
-    </div>
+    </div> -->
     <!-- about me -->
     <div class="container mt-3">
         <div class="row">
             <div class="media" id="aboutme">
-                <img src="https://memeprod.ap-south-1.linodeobjects.com/user-template/9cdf3b8110cd8a8498bed1349ad1592f.png" class="align-self-start mr-3 img-thumbnail rounded-circle" style="border-radius:50px;box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);">
+                <img src="https://memeprod.ap-south-1.linodeobjects.com/user-template/9cdf3b8110cd8a8498bed1349ad1592f.png"
+                    class="align-self-start mr-3 img-thumbnail rounded-circle"
+                    style="border-radius:50px;box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);">
                 <!-- <img src="https://i02piccdn.sogoucdn.com/cafc10742b9b77da" class="align-self-start mr-3 img-thumbnail " style="border-radius:50px;box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);opacity: 0.5;"> -->
                 <div class="media-body">
                     <br>
@@ -109,84 +114,91 @@
                     <p></p>
                     <p class="h5">目前正在泰山職訓局受訓中</p>
                 </div>
-              </div>
+            </div>
         </div>
     </div>
     <hr>
-    <!-- Card -->
+    <!-- card -->
     <div class="container">
-        <div class="title">
+        <div class="title" id="skill">
             <h3 class="text-info bg-light">&nbsp;&nbsp;&nbsp;🌱編成語言 : </h3>
         </div>
     </div>
-    <div class="container">
-        <div class="row mt-1" id="skill">
-            <div class="col-md-6 col-lg-3  ">
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" class="card-img-top img-fluid " alt="...">                    <div class="card-body">
-                        <h3 class="card-title"><i class="fa-solid fa-star-half-stroke text-success"></i>&nbsp;Front end</h3>
-                        <p class="card-text">- HTML</p>
-                        <p class="card-text">- CSS</p>
-                        <p class="card-text">- JavaScript</p>
-                        <!-- <button class="btn btn-info">Go somewhere</button> -->
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="col-md-6 col-lg-3  ">
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" class="card-img-top img-fluid " alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title"><i class="fa-solid fa-star-half-stroke text-success"></i>&nbsp;Back end</h3>
-                        <p class="card-text">- PHP</p>
-                        <p class="card-text">- MySQL</p>
-                        <!-- <button class="btn btn-info ">Go somewhere</button> -->
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="col-md-6 col-lg-3  ">
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" class="card-img-top img-fluid "
-                        alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title"><i class="fa-solid fa-star-half-stroke text-success"></i>&nbsp;框架</h3>
-                        <p class="card-text">- Bootstrap</p>
-                        <p class="card-text">- Laravel</p>
-                        <!-- <button class="btn btn-info  ">Go somewhere</button> -->
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="col-md-6 col-lg-3  ">
-                <div class="card">
-                    <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg"
-                        class="card-img-top img-fluid " alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title"><i class="fa-solid fa-star-half-stroke text-success"></i>&nbsp;Other</h3>
-                        <p class="card-text">- Photoshop</p>
-                        <p class="card-text">- Illustrator</p>
-                        <p class="card-text">- Github</p>
-                        <!-- <button class="btn btn-info  ">Go somewhere</button> -->
-                    </div>
+    <div class="container-2">
+        <div class="hover-box">
+            <div class="img-box"><img src="https://fakeimg.pl/800x600/93CCC3/ffffff/?text=hover here"
+                    class="card-img-top img-fluid " style="max-height: 200px;"></div>
+            <div class="info-box">
+                <div class="info-content">
+                    <h2>Front end</h2>
+                    <span>- HTML</span>
+                    <span>- CSS</span>
+                    <span>- JavaScript</span>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
+        <div class="hover-box">
+            <div class="img-box"><img src="https://fakeimg.pl/800x600/93CCC3/ffffff/?text=hover here"
+                    class="card-img-top img-fluid " style="max-height: 200px;"></div>
+            <div class="info-box">
+                <div class="info-content">
+                    <h2>Back end</h2>
+                    <span>- PHP</span>
+                    <span>- MySQL</span>
+                </div>
+            </div>
+        </div>
+        <div class="hover-box">
+            <div class="img-box"><img src="https://fakeimg.pl/800x600/93CCC3/ffffff/?text=hover here"
+                    class="card-img-top img-fluid " style="max-height: 200px;"></div>
+            <div class="info-box">
+                <div class="info-content">
+                    <h2>框架</h2>
+                    <span>- Bootstrap</span>
+                    <span>- Laravel</span>
+                </div>
+            </div>
+        </div>
+        <div class="hover-box">
+            <div class="img-box"><img src="https://fakeimg.pl/800x600/93CCC3/ffffff/?text=hover here"
+                    class="card-img-top img-fluid " style="max-height: 200px;"></div>
+            <div class="info-box">
+                <div class="info-content">
+                    <h2>Other</h2>
+                    <span>- Photoshop</span>
+                    <span>- Illustrator</span>
+                    <span>- Github</span>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Text -->
     <hr>
     <div class="container">
         <div class="row">
             <div class="col-3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo recusandae ducimus. Non ipsum cum molestiae, illo neque dolorem fugit obcaecati possimus quia consequatur eius sunt corrupti, quae tenetur nemo, voluptatibus recusandae voluptate modi laboriosam dicta aspernatur veniam quidem. Laboriosam nesciunt placeat aperiam voluptate expedita laborum deserunt natus cupiditate iusto.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo recusandae ducimus. Non ipsum cum
+                    molestiae, illo neque dolorem fugit obcaecati possimus quia consequatur eius sunt corrupti, quae
+                    tenetur nemo, voluptatibus recusandae voluptate modi laboriosam dicta aspernatur veniam quidem.
+                    Laboriosam nesciunt placeat aperiam voluptate expedita laborum deserunt natus cupiditate iusto.</p>
             </div>
             <div class="col-5 text-danger bg-light">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dicta beatae eos doloribus tenetur aliquid nesciunt debitis. Eligendi quo hic velit aliquid? Necessitatibus id incidunt saepe ipsum vero. Fuga pariatur perferendis modi. Debitis similique, aliquam vitae maxime quam suscipit harum nobis molestiae neque! Rem repudiandae ratione voluptate incidunt rerum doloremque, dicta amet deleniti cum veniam est, sed quas dolore? Eveniet laudantium minus numquam sit error modi! Deleniti ea soluta eligendi sapiente distinctio ducimus natus quis tenetur ipsum placeat dignissimos, saepe id perferendis eum rerum? Officiis amet ratione veniam dignissimos a maiores placeat ab enim! Quis qui beatae nisi corporis facere!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dicta beatae eos doloribus tenetur
+                    aliquid nesciunt debitis. Eligendi quo hic velit aliquid? Necessitatibus id incidunt saepe ipsum
+                    vero. Fuga pariatur perferendis modi. Debitis similique, aliquam vitae maxime quam suscipit harum
+                    nobis molestiae neque! Rem repudiandae ratione voluptate incidunt rerum doloremque, dicta amet
+                    deleniti cum veniam est, sed quas dolore? Eveniet laudantium minus numquam sit error modi! Deleniti
+                    ea soluta eligendi sapiente distinctio ducimus natus quis tenetur ipsum placeat dignissimos, saepe
+                    id perferendis eum rerum? Officiis amet ratione veniam dignissimos a maiores placeat ab enim! Quis
+                    qui beatae nisi corporis facere!</p>
             </div>
             <div class="col-4">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, a impedit. Inventore facilis debitis vel dolores sit? Enim inventore ipsam tenetur suscipit fugiat expedita ipsa, repellendus est vero ad libero aperiam dolorum ratione quidem. Sint, cum totam distinctio magni vero incidunt cupiditate accusamus nostrum odit ab sapiente beatae aut alias doloribus? Tenetur libero officiis perspiciatis quisquam minus quam nihil! Eligendi autem nobis voluptatibus error quos magnam voluptas natus, sint molestiae!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, a impedit. Inventore facilis
+                    debitis vel dolores sit? Enim inventore ipsam tenetur suscipit fugiat expedita ipsa, repellendus est
+                    vero ad libero aperiam dolorum ratione quidem. Sint, cum totam distinctio magni vero incidunt
+                    cupiditate accusamus nostrum odit ab sapiente beatae aut alias doloribus? Tenetur libero officiis
+                    perspiciatis quisquam minus quam nihil! Eligendi autem nobis voluptatibus error quos magnam voluptas
+                    natus, sint molestiae!</p>
             </div>
         </div>
     </div>
@@ -195,10 +207,28 @@
     <div class="container">
         <div class="row">
             <div class="col-8">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7020090598976!2d121.41729491533842!3d25.04418494403638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bed3dc9b59%3A0x57e6439a2db0fa2a!2zMjQz5paw5YyX5biC5rOw5bGx5Y2A5rOw5bGx6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1658390628017!5m2!1szh-TW!2stw" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7020090598976!2d121.41729491533842!3d25.04418494403638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bed3dc9b59%3A0x57e6439a2db0fa2a!2zMjQz5paw5YyX5biC5rOw5bGx5Y2A5rOw5bGx6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1658390628017!5m2!1szh-TW!2stw"
+                    width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="col-4">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe quisquam voluptate adipisci magnam, tempora voluptatum quos dicta animi quia officiis vel, quaerat veniam, aliquam laboriosam et voluptates aspernatur doloribus? Excepturi, totam a. Ratione vel vitae sapiente consequatur fuga odio deserunt quam voluptas iure. Minima, dignissimos. Reprehenderit eius aut velit vitae!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe quisquam voluptate adipisci magnam,
+                    tempora voluptatum quos dicta animi quia officiis vel, quaerat veniam, aliquam laboriosam et
+                    voluptates aspernatur doloribus? Excepturi, totam a. Ratione vel vitae sapiente consequatur fuga
+                    odio deserunt quam voluptas iure. Minima, dignissimos. Reprehenderit eius aut velit vitae!</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- test -->
+    <div class="container">
+        <div id="dailycss_20200803-2">
+            <div class="imageBox">
+                <img src="https://fakeimg.pl/800x600/93CCC3/ffffff/?text=hover here" alt="">
+                <div class="textBox">
+                    <h1>艾吉單飛鳥 DAILY CSS</h1>
+                </div>
             </div>
         </div>
     </div>

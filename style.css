@@ -1,0 +1,116 @@
+/* 自我介紹區塊 */
+#dailycss_20200803-2 {
+    background-color: #003444;
+    margin: 0;
+    padding: 0;
+}
+
+#dailycss_20200803-2 .container {
+    margin: 20px auto;
+    width: 480px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#dailycss_20200803-2 .imageBox {
+    position: relative;
+    overflow: hidden;
+}
+
+#dailycss_20200803-2 .imageBox img {
+    width: 100%;
+    transition: .3s;
+}
+
+#dailycss_20200803-2 .textBox {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(255, 0, 0, .9);
+    transition: .5s;
+}
+
+#dailycss_20200803-2 .textBox h1 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: #fff;
+}
+
+#dailycss_20200803-2 .imageBox:hover .textBox {
+    left: 0;
+
+}
+
+#dailycss_20200803-2 .imageBox:hover img {
+    transform: scale(1.2);
+}
+/* 技能區塊 */
+.container-2 {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+  }
+  
+  .hover-box {
+    max-width: 25%;
+    max-height: 200px;
+    margin: auto;
+    /* background: #4d674a; */
+    box-sizing: border-box;
+    position:relative;
+  }
+  
+  .hover-box .img-box {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hover-box .img-box img {
+    margin: auto;
+    transition: transform 0.5s;
+  }
+  
+  .hover-box:hover .img-box img {
+    transform: scale(1.3);
+  }
+  
+   .hover-box .info-box {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    bottom:10px;
+    right:10px;
+     color:#fff;
+    background:rgba(0,0,0,.6);
+     text-align:center;
+     transform:scaleY(0);
+     transition:transform .5s;
+  } 
+  
+  .hover-box .info-box .info-content{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    padding:15px;
+  }
+  
+  .hover-box:hover .info-box {
+    transform:scaleY(1);
+  }
+
+  .info-content span{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
