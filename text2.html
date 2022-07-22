@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slide-right {
+            width: 100%;
+            overflow: hidden;
+            margin-right: 500px;
+            max-width: 500px
+        }
+
+        .slide-right p {
+            animation: 0.9s slide-right 0.9s forwards;
+            transform: translateX(-100%);
+        }
+
+        @keyframes slide-right {
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide-right">
+        <p class="h5">🌱 I’m currently learning programming language</p>
+        <p></p>
+        <p class="h5">目前正在泰山職訓局受訓中</p>
+    </div>
+</body>
+
+</html>

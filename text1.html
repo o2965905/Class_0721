@@ -37,7 +37,8 @@
     <div class="content">
 
         <!-- 我要移動的div -->
-        <div class="move">123123</div>
+        <div id="someId"></div>
+        <div id="someId2"></div>
 
     </div>
 
@@ -50,7 +51,13 @@
     $(document).ready(function () {
 
         // 將div加入animate動畫 往右邊走250px 秒數5秒
-        $("div").animate( {right: '250px'} , 5000 );
+        // $("div").animate( {right: '250px'} , 5000 );
+
+        $("#someId").hide();
+        $("#someId2").hide();
+        $("#someId").html("🌱 I’m currently learning programming language").slideDown('slow');
+        $("#someId2").html("目前正在泰山職訓局受訓中").slideDown('slow');
+
     })
 </script>
 
